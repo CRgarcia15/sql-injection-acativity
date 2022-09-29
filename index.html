@@ -9,16 +9,26 @@
 </head>
 <body>
     <form>
+        <div class="container"> 
 
-        <!-- add input tags and fields (username, password (must required))-->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required><br>
 
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" placeholder="Password" required><br>
+
+            <button type="submit">Login</button> 
+
+        </div>
+        
         <script>
-            if(document.location.hash === '#unathorized') {
-        document.write(`<div class="unauthorized">Invalid Username or Password</div>`);
+            if(document.location.hash === '#unauthorized') {
+                document.write('<div class="unauthorized">Invalid Username or Password</div>');
             } else if(document.location.hash === '#error') {
-        document.write(`<div class="error">An error has occured</div>`);
+                document.write('<div class="error">An error has occured</div>');
             }
-        </script>
+          </script>
+    
       </form>
 </body>
 </html>
