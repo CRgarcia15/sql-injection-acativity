@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SQL-Injection</title>
+</head>
+<body>
+    <form>
+
+        <!-- add input tags and fields (username, password (must required))-->
+
+        <script>
+            if(document.location.hash === '#unathorized') {
+        document.write(`<div class="unauthorized">Invalid Username or Password</div>`);
+            } else if(document.location.hash === '#error') {
+        document.write(`<div class="error">An error has occured</div>`);
+            }
+        </script>
+      </form>
+</body>
+</html>
